@@ -1,0 +1,2 @@
+[console_scripts]
+simple_node = my_python_package.simple_node:main

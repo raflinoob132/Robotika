@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: my-python-package
+Version: 0.0.0
+Summary: A simple ROS 2 Python package
+Maintainer: rafli
+Maintainer-email: rafli@todo.todo
+License: Apache License 2.0

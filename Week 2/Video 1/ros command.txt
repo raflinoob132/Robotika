@@ -1,0 +1,13 @@
+Pengerjaan dilakukan dengan ros2 jazzy
+
+1. Menjalankan node turtlesim
+source /opt/ros/jazzy/setup.bash
+ros2 run turtlesim turtlesim_node
+
+2. Menjalankan rqt_graph
+source /opt/ros/jazzy/setup.bash
+ros2 run rqt_graph rqt_graph
+
+3. Menjalankan turtle teleop
+source /opt/ros/jazzy/setup.bash
+ros2 run turtlesim turtle_teleop_key

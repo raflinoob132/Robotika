@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+../../build/my_python_package/my_python_package.egg-info/PKG-INFO
+../../build/my_python_package/my_python_package.egg-info/SOURCES.txt
+../../build/my_python_package/my_python_package.egg-info/dependency_links.txt
+../../build/my_python_package/my_python_package.egg-info/entry_points.txt
+../../build/my_python_package/my_python_package.egg-info/requires.txt
+../../build/my_python_package/my_python_package.egg-info/top_level.txt
+../../build/my_python_package/my_python_package.egg-info/zip-safe
+my_python_package/simple_node.py

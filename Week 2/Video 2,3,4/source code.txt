@@ -1,0 +1,33 @@
+source /opt/ros/jazzy/setup.bash
+# Buat direktori workspace baru
+mkdir -p ~/ros2_ws/src
+
+# Masuk ke dalam workspace
+cd ~/ros2_ws
+# Buat direktori workspace baru
+mkdir -p ~/ros2_ws/src
+
+# Masuk ke dalam workspace
+cd ~/ros2_ws
+# Buat paket Python baru di dalam direktori src
+ros2 pkg create --build-type ament_python my_python_package
+
+# Buat folder tempat kita menyimpan node Python
+mkdir -p ~/ros2_ws/src/my_python_package/my_python_package
+
+# Buat file Python untuk node
+touch ~/ros2_ws/src/my_python_package/my_python_package/simple_node.py
+
+# Jadikan file tersebut executable
+chmod +x ~/ros2_ws/src/my_python_package/my_python_package/simple_node.py
+
+#Kembali ke root workspace
+cd ~/ros2_ws
+
+# Build workspace
+colcon build
+source install/setup.bash
+ros2 run my_python_package simple_node
+
+
+

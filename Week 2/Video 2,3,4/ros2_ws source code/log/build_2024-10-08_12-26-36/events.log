@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000293] (my_python_package) JobQueued: {'identifier': 'my_python_package', 'dependencies': OrderedDict()}
+[0.000350] (my_python_package) JobStarted: {'identifier': 'my_python_package'}
+[0.097540] (-) TimerEvent: {}
+[0.210524] (-) TimerEvent: {}
+[0.316055] (-) TimerEvent: {}
+[0.434447] (-) TimerEvent: {}
+[0.596451] (-) TimerEvent: {}
+[0.699729] (-) TimerEvent: {}
+[0.801062] (-) TimerEvent: {}
+[0.928160] (-) TimerEvent: {}
+[1.047725] (-) TimerEvent: {}
+[1.179160] (-) TimerEvent: {}
+[1.283069] (-) TimerEvent: {}
+[1.408104] (-) TimerEvent: {}
+[1.513798] (-) TimerEvent: {}
+[1.615008] (-) TimerEvent: {}
+[1.721783] (-) TimerEvent: {}
+[1.858546] (-) TimerEvent: {}
+[1.972024] (-) TimerEvent: {}
+[2.073104] (-) TimerEvent: {}
+[2.199780] (-) TimerEvent: {}
+[2.301225] (-) TimerEvent: {}
+[2.403670] (-) TimerEvent: {}
+[2.505233] (-) TimerEvent: {}
+[2.516883] (my_python_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_python_package', 'build', '--build-base', '/home/rafli/ros2_ws/build/my_python_package/build', 'install', '--record', '/home/rafli/ros2_ws/build/my_python_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/rafli/ros2_ws/src/my_python_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rafli', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/rafli', 'OLDPWD': '/home/rafli/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1251', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/rafli/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rafli', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rafli', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rafli-VirtualBox:@/tmp/.ICE-unix/1218,unix/rafli-VirtualBox:/tmp/.ICE-unix/1218', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4db23387_cca2_4cb7_9033_ea800464abee', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KN6PV2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.178', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rafli/ros2_ws/install/my_python_package:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rafli/ros2_ws/build/my_python_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rafli/ros2_ws/build/my_python_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages:/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.670237] (-) TimerEvent: {}
+[2.824463] (-) TimerEvent: {}
+[3.006526] (-) TimerEvent: {}
+[3.115479] (-) TimerEvent: {}
+[3.235142] (-) TimerEvent: {}
+[3.337220] (-) TimerEvent: {}
+[3.359919] (my_python_package) StdoutLine: {'line': b'running egg_info\n'}
+[3.440119] (my_python_package) StdoutLine: {'line': b'writing ../../build/my_python_package/my_python_package.egg-info/PKG-INFO\n'}
+[3.440500] (-) TimerEvent: {}
+[3.441665] (my_python_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_python_package/my_python_package.egg-info/dependency_links.txt\n'}
+[3.447184] (my_python_package) StdoutLine: {'line': b'writing entry points to ../../build/my_python_package/my_python_package.egg-info/entry_points.txt\n'}
+[3.447925] (my_python_package) StdoutLine: {'line': b'writing requirements to ../../build/my_python_package/my_python_package.egg-info/requires.txt\n'}
+[3.450131] (my_python_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_python_package/my_python_package.egg-info/top_level.txt\n'}
+[3.565238] (-) TimerEvent: {}
+[3.628655] (my_python_package) StdoutLine: {'line': b"reading manifest file '../../build/my_python_package/my_python_package.egg-info/SOURCES.txt'\n"}
+[3.631788] (my_python_package) StdoutLine: {'line': b"writing manifest file '../../build/my_python_package/my_python_package.egg-info/SOURCES.txt'\n"}
+[3.633620] (my_python_package) StdoutLine: {'line': b'running build\n'}
+[3.633928] (my_python_package) StdoutLine: {'line': b'running build_py\n'}
+[3.634932] (my_python_package) StdoutLine: {'line': b'copying my_python_package/simple_node.py -> /home/rafli/ros2_ws/build/my_python_package/build/lib/my_python_package\n'}
+[3.635693] (my_python_package) StdoutLine: {'line': b'running install\n'}
+[3.663552] (my_python_package) StdoutLine: {'line': b'running install_lib\n'}
+[3.666449] (-) TimerEvent: {}
+[3.767597] (-) TimerEvent: {}
+[3.770355] (my_python_package) StdoutLine: {'line': b'copying /home/rafli/ros2_ws/build/my_python_package/build/lib/my_python_package/simple_node.py -> /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package\n'}
+[3.773660] (my_python_package) StdoutLine: {'line': b'byte-compiling /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package/simple_node.py to simple_node.cpython-312.pyc\n'}
+[3.776503] (my_python_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.871173] (my_python_package) StdoutLine: {'line': b"removing '/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[3.872101] (-) TimerEvent: {}
+[3.875457] (my_python_package) StdoutLine: {'line': b'Copying ../../build/my_python_package/my_python_package.egg-info to /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package-0.0.0-py3.12.egg-info\n'}
+[3.875904] (my_python_package) StdoutLine: {'line': b'running install_scripts\n'}
+[3.985935] (-) TimerEvent: {}
+[4.114173] (-) TimerEvent: {}
+[4.226499] (-) TimerEvent: {}
+[4.336237] (-) TimerEvent: {}
+[4.453089] (my_python_package) StdoutLine: {'line': b'Installing simple_node script to /home/rafli/ros2_ws/install/my_python_package/lib/my_python_package\n'}
+[4.453485] (-) TimerEvent: {}
+[4.457249] (my_python_package) StdoutLine: {'line': b"writing list of installed files to '/home/rafli/ros2_ws/build/my_python_package/install.log'\n"}
+[4.547078] (my_python_package) CommandEnded: {'returncode': 0}
+[4.558648] (-) TimerEvent: {}
+[4.588653] (my_python_package) JobEnded: {'identifier': 'my_python_package', 'rc': 0}
+[4.603696] (-) EventReactorShutdown: {}

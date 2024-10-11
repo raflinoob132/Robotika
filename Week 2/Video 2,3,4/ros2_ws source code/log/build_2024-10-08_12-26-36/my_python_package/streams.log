@@ -1,0 +1,23 @@
+[2.521s] Invoking command in '/home/rafli/ros2_ws/src/my_python_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rafli/ros2_ws/build/my_python_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_package build --build-base /home/rafli/ros2_ws/build/my_python_package/build install --record /home/rafli/ros2_ws/build/my_python_package/install.log --single-version-externally-managed
+[3.360s] running egg_info
+[3.440s] writing ../../build/my_python_package/my_python_package.egg-info/PKG-INFO
+[3.442s] writing dependency_links to ../../build/my_python_package/my_python_package.egg-info/dependency_links.txt
+[3.447s] writing entry points to ../../build/my_python_package/my_python_package.egg-info/entry_points.txt
+[3.448s] writing requirements to ../../build/my_python_package/my_python_package.egg-info/requires.txt
+[3.450s] writing top-level names to ../../build/my_python_package/my_python_package.egg-info/top_level.txt
+[3.629s] reading manifest file '../../build/my_python_package/my_python_package.egg-info/SOURCES.txt'
+[3.633s] writing manifest file '../../build/my_python_package/my_python_package.egg-info/SOURCES.txt'
+[3.634s] running build
+[3.634s] running build_py
+[3.635s] copying my_python_package/simple_node.py -> /home/rafli/ros2_ws/build/my_python_package/build/lib/my_python_package
+[3.636s] running install
+[3.664s] running install_lib
+[3.771s] copying /home/rafli/ros2_ws/build/my_python_package/build/lib/my_python_package/simple_node.py -> /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package
+[3.774s] byte-compiling /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package/simple_node.py to simple_node.cpython-312.pyc
+[3.776s] running install_egg_info
+[3.872s] removing '/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package-0.0.0-py3.12.egg-info' (and everything under it)
+[3.875s] Copying ../../build/my_python_package/my_python_package.egg-info to /home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages/my_python_package-0.0.0-py3.12.egg-info
+[3.876s] running install_scripts
+[4.453s] Installing simple_node script to /home/rafli/ros2_ws/install/my_python_package/lib/my_python_package
+[4.457s] writing list of installed files to '/home/rafli/ros2_ws/build/my_python_package/install.log'
+[4.547s] Invoked command in '/home/rafli/ros2_ws/src/my_python_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rafli/ros2_ws/build/my_python_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rafli/ros2_ws/install/my_python_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_package build --build-base /home/rafli/ros2_ws/build/my_python_package/build install --record /home/rafli/ros2_ws/build/my_python_package/install.log --single-version-externally-managed
