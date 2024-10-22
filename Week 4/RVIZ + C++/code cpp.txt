@@ -1,0 +1,70 @@
+#include <rclcpp/rclcpp.hpp>
+#include <moveit/move_group_interface/move_group_interface.h>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+
+int main(int argc, char** argv)
+{
+    // Inisialisasi node ROS 2
+    rclcpp::init(argc, argv);
+    auto node = rclcpp::Node::make_shared("panda_move_loop_node");
+
+    // Buat interface MoveGroup untuk mengontrol Panda arm dengan grup 'panda_arm'
+    moveit::planning_interface::MoveGroupInterface move_group(node, "panda_arm");
+
+    // Tetapkan toleransi posisi dan orientasi untuk akurasi gerakan
+    move_group.setGoalPositionTolerance(0.01);
+    move_group.setGoalOrientationTolerance(0.01);
+
+    // Loop pergerakan robot
+    while (rclcpp::ok()) {
+        // Tentukan target pose pertama dalam koordinat global
+        geometry_msgs::msg::Pose target_pose_1;
+        target_pose_1.orientation.w = 1.0;
+        target_pose_1.position.x = 0.4;
+        target_pose_1.position.y = 0.1;
+        target_pose_1.position.z = 0.4;
+        
+        // Tetapkan pose target pertama ke move_group
+        move_group.setPoseTarget(target_pose_1);
+
+        // Lakukan perencanaan dan eksekusi gerakan ke pose pertama
+        moveit::planning_interface::MoveGroupInterface::Plan plan_1;
+        bool success_1 = (move_group.plan(plan_1) == moveit::core::MoveItErrorCode::SUCCESS);
+        if (success_1) {
+            RCLCPP_INFO(node->get_logger(), "Berhasil merencanakan gerakan ke pose pertama. Menjalankan pergerakan.");
+            move_group.move();
+        } else {
+            RCLCPP_ERROR(node->get_logger(), "Perencanaan gagal ke pose pertama.");
+        }
+
+        // Tunggu sebentar sebelum ke pose berikutnya
+        rclcpp::sleep_for(std::chrono::seconds(2));
+
+        // Tentukan target pose kedua
+        geometry_msgs::msg::Pose target_pose_2;
+        target_pose_2.orientation.w = 1.0;
+        target_pose_2.position.x = 0.4;
+        target_pose_2.position.y = -0.1;
+        target_pose_2.position.z = 0.4;
+
+        // Tetapkan pose target kedua ke move_group
+        move_group.setPoseTarget(target_pose_2);
+
+        // Lakukan perencanaan dan eksekusi gerakan ke pose kedua
+        moveit::planning_interface::MoveGroupInterface::Plan plan_2;
+        bool success_2 = (move_group.plan(plan_2) == moveit::core::MoveItErrorCode::SUCCESS);
+        if (success_2) {
+            RCLCPP_INFO(node->get_logger(), "Berhasil merencanakan gerakan ke pose kedua. Menjalankan pergerakan.");
+            move_group.move();
+        } else {
+            RCLCPP_ERROR(node->get_logger(), "Perencanaan gagal ke pose kedua.");
+        }
+
+        // Tunggu sebentar sebelum kembali ke pose pertama
+        rclcpp::sleep_for(std::chrono::seconds(2));
+    }
+
+    // Akhiri node
+    rclcpp::shutdown();
+    return 0;
+}

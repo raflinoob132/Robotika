@@ -1,0 +1,2 @@
+source ~/ws_moveit/install/setup.bash
+ros2 launch moveit2_tutorials demo.lanuch.py rviz_config :=panda_moveit_config_demo_empty.rviz

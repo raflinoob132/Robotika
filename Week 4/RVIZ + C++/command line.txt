@@ -1,0 +1,34 @@
+#terminal 1
+
+cd ws_moveit/
+source/opt/ros/humble/setup.bash
+cd ~/ws_moveit
+source ~/ws_moveit/install/setup.bash
+ros2 launch moveit2_tutorials demo.lanuch.py rviz_config :=panda_moveit_config_demo_empty.rviz
+
+#terminal 2
+
+source/opt/ros/humble/setup.bash
+source ~/ws_moveit/install/setup.bash
+cd ~/ws_moveit/src
+ros2 pkg create \
+--build-type ament_cmake \
+--dependencies moveit_ros_planning_interface rclcpp \
+--node-name move_program move_program
+cd ~/ws_moveit/src/move_program/src
+sudo apt install gedit
+gedit move_program.cpp
+cd ~/ws_moveit
+colcon build --mixin debug --packages-select move_program
+source ~/ws_moveit/install/setup.bash
+ros2 run move_program move_program
+
+#terminal 3
+
+source/opt/ros/humble/setup.bash
+cd ~/ws_moveit
+source ~/ws_moveit/install/setup.bash
+ros2 launch moveit2_tutorials demo.lanuch.py rviz_config :=panda_moveit_config_demo_empty.rviz
+
+
+
