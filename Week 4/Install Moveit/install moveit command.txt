@@ -1,5 +1,4 @@
 source /opt/ros/humble/setup.bash
-source /opt/ros/iron/setup.bash
 sudo rosdep init
 rosdep update
 sudo apt update
