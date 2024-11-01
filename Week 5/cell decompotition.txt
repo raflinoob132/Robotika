@@ -1,0 +1,54 @@
+from collections import deque
+
+def cell_decomposition_path(grid, start, goal):
+    rows, cols = len(grid), len(grid[0])
+    queue = deque([start])
+    came_from = {start: None}
+    
+    while queue:
+        current = queue.popleft()
+        
+        # Jika mencapai tujuan, rekonstruksi jalur
+        if current == goal:
+            path = []
+            while current:
+                path.append(current)
+                current = came_from[current]
+            path.reverse()
+            return path
+        
+        # Periksa tetangga (atas, bawah, kiri, kanan)
+        for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            neighbor = (current[0] + dx, current[1] + dy)
+            
+            if (0 <= neighbor[0] < rows and 0 <= neighbor[1] < cols and
+                grid[neighbor[0]][neighbor[1]] == 0 and neighbor not in came_from):
+                
+                # Tambahkan cell yang aman ke dalam queue dan lacak asalnya
+                queue.append(neighbor)
+                came_from[neighbor] = current
+    
+    return None  # Tidak ada jalur yang ditemukan
+
+# Contoh grid: 0 adalah cell bebas, 1 adalah rintangan
+grid = [
+    [0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0]
+]
+
+start = (0, 0)
+goal = (4, 4)
+
+# Temukan jalur dari start ke goal menggunakan cell decomposition
+path = cell_decomposition_path(grid, start, goal)
+
+# Tampilkan hasil
+if path:
+    print("Jalur yang ditemukan melalui cell yang aman:")
+    for step in path:
+        print(step)
+else:
+    print("Tidak ada jalur yang ditemukan dari start ke goal")
