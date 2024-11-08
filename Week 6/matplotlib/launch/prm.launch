@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="prm_planner" type="prm.py" name="prm" output="screen">
+        <param name="use_sim_time" value="false"/>
+        <rosparam file="$(find prm_planner)/config/params.yaml" command="load"/>
+    </node>
+</launch>

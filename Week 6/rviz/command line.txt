@@ -1,0 +1,11 @@
+#terminal utama
+git clone https://github.com/Malintha/rrt-ros
+cd rrt-ros
+catkin_make
+source devel/setup.bash
+#terminal roscore
+roscore
+#terminal utama
+rosrun rrt-planning rrt
+#terminal rviz
+rosrun rviz rviz
