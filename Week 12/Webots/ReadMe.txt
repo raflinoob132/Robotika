@@ -1,0 +1,1 @@
+Screen record saya gunakan yang dari bawaan webots dikarenakan jika menggunakan yang dari windows sangat lag. Oleh karena itu tidak terlihat keseluruhan layer saat screen record
