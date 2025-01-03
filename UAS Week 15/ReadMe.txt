@@ -7,7 +7,8 @@ Penjelasan singkat untuk file yang diunggah
 
 1. Command  W15_Rafli Limandijaya.pdf berisi command yang digunakan dalam pengerjaan tugas
 2. Laporan UAS Robotika W15_Rafli Limandijaya.pdf berisi laporan analisis dari apa yang telah dikerjakan. Didalamnya ada tangkapan layar dari setiap chapter yang dibuat
-3. Skrip Video UAS Robotika W15_Rafli Limandijaya.pdf berisi alur dari video yang telah dibuat. Disini hanya ada penjelasan singkat dari alur videonya. Untuk penjelasan lebih detil, diharapkan menonton playlist video yang telah diunggah ke youtube.
+3. Skrip Video UAS Robotika W15_Rafli Limandijaya.pdf berisi alur dari video yang telah dibuat. Disini hanya ada penjelasan singkat dari alur videonya. Untuk penjelasan
+lebih detil, diharapkan menonton playlist video yang telah diunggah ke youtube.
 
 Chapter yang telah dibuat dari buku adalah berikut ini:
 1. Introduction to ROS
